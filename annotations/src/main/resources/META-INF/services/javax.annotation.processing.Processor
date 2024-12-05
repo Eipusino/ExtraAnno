@@ -1,0 +1,7 @@
+heavyindustry.annotations.impl.AssetsProcessor
+heavyindustry.annotations.impl.FactionProcessor
+heavyindustry.annotations.impl.LoadProcessor
+heavyindustry.annotations.impl.StructProcessor
+heavyindustry.annotations.entity.EntityProcessor
+heavyindustry.annotations.entity.MergeProcessor
+heavyindustry.annotations.entity.DupeProcessor
