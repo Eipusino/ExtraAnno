@@ -40,7 +40,7 @@ public class AssetsProcessor extends BaseProcessor {
 
                         @Override
                         public String name() {
-                            return "TSounds";
+                            return "LSounds";
                         }
 
                         @Override

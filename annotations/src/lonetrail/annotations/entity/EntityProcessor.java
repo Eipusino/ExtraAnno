@@ -638,7 +638,7 @@ public class EntityProcessor extends BaseProcessor {
                 definitions.add(new EntityDefinition(packageName + "." + name, builder, def, typeIsBase ? null : baseClass, defComps, defGroups, allFieldSpecs));
             }
         } else if (round == 3) {
-            TypeSpec.Builder map = TypeSpec.classBuilder("TEntityMapping").addModifiers(Modifier.PUBLIC)
+            TypeSpec.Builder map = TypeSpec.classBuilder("EntityRegister").addModifiers(Modifier.PUBLIC)
                     .addField(
                             FieldSpec.builder(ParameterizedTypeName.get(
                                             cName(ObjectIntMap.class),
@@ -670,7 +670,7 @@ public class EntityProcessor extends BaseProcessor {
                                             ParameterizedTypeName.get(cName(Prov.class), tvName("T")),
                                             "prov"
                                     )
-                                    .beginControlFlow("synchronized($T.class)", ClassName.get(packageName, "TEntityMapping"))
+                                    .beginControlFlow("synchronized($T.class)", ClassName.get(packageName, "EntityRegister"))
                                     .addStatement("if(ids.containsKey(type) || $T.nameMap.containsKey(type.getSimpleName())) return", cName(EntityMapping.class))
                                     .addCode(lnew())
                                     .beginControlFlow("for(; last < $T.idMap.length; last++)", cName(EntityMapping.class))
@@ -752,7 +752,7 @@ public class EntityProcessor extends BaseProcessor {
                         MethodSpec.methodBuilder("classId").addModifiers(Modifier.PUBLIC)
                                 .addAnnotation(cName(Override.class))
                                 .returns(TypeName.INT)
-                                .addStatement("return $T.classId($T.class)", ClassName.get(packageName, "TEntityMapping"), type)
+                                .addStatement("return $T.classId($T.class)", ClassName.get(packageName, "EntityRegister"), type)
                                 .build()
                 );
 

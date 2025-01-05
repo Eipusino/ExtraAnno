@@ -1,4 +1,4 @@
 package lonetrail.content;
 
-public class TBlocks {
+public class LBlocks {
 }

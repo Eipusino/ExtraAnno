@@ -9,12 +9,12 @@ import lonetrail.entities.*;
 import lonetrail.entities.Rotor.*;
 import lonetrail.gen.*;
 
-public class TUnitType extends UnitType {
+public class LUnitType extends UnitType {
     public final Seq<Rotor> rotors = new Seq<>(2);
     public float rotorDeathSlowdown = 0.01f;
     public float fallRotateSpeed = 2.5f;
 
-    public TUnitType(String name) {
+    public LUnitType(String name) {
         super(name);
     }
 

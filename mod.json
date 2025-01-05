@@ -3,7 +3,7 @@
     "name": "lonetrail",
     "author": "Eipusino",
     "subtitle": "Test Java Mod",
-    "main": "lonetrail.TestMod",
+    "main": "lonetrail.core.LoneTrailMod",
     "description": "test mod.",
     "version": "0.0.1",
     "java": true,

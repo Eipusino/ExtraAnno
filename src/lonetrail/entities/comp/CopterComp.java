@@ -23,7 +23,7 @@ abstract class CopterComp implements Unitc {
 
     @Override
     public void add() {
-        if (type instanceof TUnitType tType) {
+        if (type instanceof LUnitType tType) {
             rotors = new RotorMount[tType.rotors.size];
             for (int i = 0; i < rotors.length; i++) {
                 Rotor rotor = tType.rotors.get(i);
@@ -36,7 +36,7 @@ abstract class CopterComp implements Unitc {
 
     @Override
     public void update() {
-        if (type instanceof TUnitType tType) {
+        if (type instanceof LUnitType tType) {
             if (dead || health < 0f) {
                 if (!net.client() || isLocal()) rotation += tType.fallRotateSpeed * Mathf.signs[id % 2] * Time.delta;
 
