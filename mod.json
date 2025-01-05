@@ -1,0 +1,11 @@
+{
+    "displayName": "Test Mod",
+    "name": "lonetrail",
+    "author": "Eipusino",
+    "subtitle": "Test Java Mod",
+    "main": "lonetrail.TestMod",
+    "description": "test mod.",
+    "version": "0.0.1",
+    "java": true,
+    "minGameVersion": 147.0
+}

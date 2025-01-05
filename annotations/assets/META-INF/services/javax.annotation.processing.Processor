@@ -1,0 +1,6 @@
+lonetrail.annotations.entity.DupeProcessor
+lonetrail.annotations.entity.EntityProcessor
+lonetrail.annotations.entity.MergeProcessor
+lonetrail.annotations.impl.AssetsProcessor
+lonetrail.annotations.impl.LoadProcessor
+lonetrail.annotations.impl.StructProcessor
