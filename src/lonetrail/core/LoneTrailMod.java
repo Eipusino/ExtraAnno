@@ -2,7 +2,6 @@ package lonetrail.core;
 
 import arc.*;
 import arc.struct.*;
-import arc.util.*;
 import lonetrail.content.*;
 import lonetrail.gen.*;
 import mindustry.game.EventType.*;

@@ -7,5 +7,6 @@
     "description": "test mod.",
     "version": "0.0.1",
     "java": true,
-    "minGameVersion": 147.0
+    "minGameVersion": 147.0,
+    "hideBrowser": true
 }
